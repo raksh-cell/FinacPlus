@@ -24,7 +24,7 @@ function writeBookDetails({ title, author, publisher }, outputPath) {
   ].join('\n');
 
   fs.writeFileSync(outputPath, content, 'utf8');
-  console.log(`📄 Book details written to: ${outputPath}`);
+  console.log(` Book details written to: ${outputPath}`);
 }
 
 module.exports = { writeBookDetails };
